@@ -7,41 +7,74 @@
 <style>
 body{
   margin:0;
-  font-family:Arial, sans-serif;
-  background:#f4f4f4;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background:#f0f2f5;
 }
 header{
-  background:#c44569;
+  background: linear-gradient(90deg, #f093fb, #f5576c);
   color:white;
   text-align:center;
-  padding:25px;
+  padding:35px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+header h1{
+  margin:0;
+  font-size:2.5em;
+  letter-spacing:1px;
+}
+header p{
+  margin:5px 0 15px;
+  font-size:1.1em;
+}
+.header-buttons a{
+  display:inline-block;
+  margin:5px 10px;
+  padding:12px 22px;
+  background:white;
+  color:#f5576c;
+  font-weight:bold;
+  text-decoration:none;
+  border-radius:25px;
+  transition:0.3s;
+}
+.header-buttons a:hover{
+  background:#f5576c;
+  color:white;
 }
 section{
   background:white;
-  margin:15px;
-  padding:20px;
-  border-radius:8px;
+  margin:20px 15px;
+  padding:25px;
+  border-radius:12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 h2{
-  color:#c44569;
+  color:#f5576c;
+  margin-bottom:15px;
 }
-.btn{
-  display:inline-block;
-  padding:12px 20px;
-  margin:8px;
-  background:#6a89cc;
-  color:white;
-  text-decoration:none;
-  border-radius:5px;
+ul{
+  padding-left:20px;
 }
-.whatsapp{
-  background:#25D366;
+ul li{
+  margin-bottom:8px;
+  line-height:1.5em;
 }
 footer{
-  background:#c44569;
+  background:#f093fb;
   color:white;
   text-align:center;
-  padding:12px;
+  padding:18px;
+  margin-top:20px;
+  border-top-left-radius:12px;
+  border-top-right-radius:12px;
+}
+.btn-whatsapp{
+  background:#25D366 !important;
+  color:white !important;
+  padding:10px 20px !important;
+  border-radius:20px !important;
+  text-decoration:none !important;
+  font-weight:bold;
 }
 </style>
 </head>
@@ -50,8 +83,10 @@ footer{
 <header>
   <h1>Radha Rani Garments</h1>
   <p>Ladies Kurti & Kids Wear Available</p>
-  <a class="btn" href="tel:7665066678">📞 Call Now</a>
-  <a class="btn whatsapp" href="https://wa.me/917665066678">💬 WhatsApp</a>
+  <div class="header-buttons">
+    <a href="tel:7665066678">📞 Call Now</a>
+    <a class="btn-whatsapp" href="https://wa.me/917665066678">💬 WhatsApp</a>
+  </div>
 </header>
 
 <section>
